@@ -1,0 +1,13 @@
+Title: Mitsingen
+
+----
+
+Intro: Sie möchten bei uns mitsingen?
+
+----
+
+Text: Wir proben jeden Mittwoch von 20 - 22 Uhr in der Katholischen Kirche in Burgthann.
+
+----
+
+Uuid: 5CtmkFacw9R0lHGN
