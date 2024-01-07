@@ -1,0 +1,71 @@
+.logo {
+  display: block;
+  padding: 1rem;
+}
+
+.logo img {
+  display: block;
+}
+
+/* Menu stylings */
+.menu {
+  position: relative;
+  border-top: 2px solid var(--clr-highlight-secondary);
+  border-bottom: 2px solid var(--clr-highlight-secondary);
+  background-color: var(--clr-highlight-primary);
+}
+
+.menu__link {
+  color: #000;
+}
+
+.menu__button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button--text {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.icon.icon--menu,
+.icon.icon--close {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menu__list {
+  position: absolute;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: 0;
+
+  background-color: var(--clr-highlight-primary);
+}
+
+.menu__item + .menu__item {
+  margin-top: 0.5rem;
+}
+
+/* Toggle states */
+
+.menu__button[aria-expanded="false"] .icon.icon--close {
+  display: none;
+}
+
+.menu__button[aria-expanded="true"] .icon.icon--close {
+  display: inline-block;
+}
+
+.menu__button[aria-expanded="true"] .icon.icon--menu {
+  display: none;
+}
+
+.menu__button[aria-expanded="false"] ~ .menu__list {
+  display: none;
+}

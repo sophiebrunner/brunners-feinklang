@@ -1,0 +1,13 @@
+Title: Presse
+
+----
+
+Intro: Hier finden Sie Berichte aus der Presse über uns.
+
+----
+
+Text: Lorem Ipsum
+
+----
+
+Uuid: 5CtmkFacw9R0lHGN
