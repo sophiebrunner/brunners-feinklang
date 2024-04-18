@@ -1,89 +1,63 @@
-/* roboto-slab-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/roboto-slab-v34-latin-900.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/roboto-slab-v34-latin-900.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* roboto-slab-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-slab-v34-latin-700.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/roboto-slab-v34-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* atkinson-hyperlegible-400 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Atkinson Hyperlegible";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/atkinson-hyperlegible-regular-102a.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/atkinson-hyperlegible-regular-102.woff") format("woff"),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("../fonts/atkinson-hyperlegible-regular-102.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
-/* atkinson-hyperlegible-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Atkinson Hyperlegible";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/atkinson-hyperlegible-bold-102a.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url("../fonts/atkinson-hyperlegible-bold-102.woff") format("woff"),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url("../fonts/atkinson-hyperlegible-bold-102.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1920,18,1.25,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.125,1920,18,1.125,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-  --clr-highlight-primary: #339900;
-  --clr-highlight-secondary: #4b0899;
-  --clr-background: #f0f0f0;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  /* Step -1: 14.2222px → 16px */
+  --step--1: clamp(0.8889rem, 0.8632rem + 0.114vi, 1rem);
+  /* Step 0: 16px → 18px */
+  --step-0: clamp(1rem, 0.9712rem + 0.1282vi, 1.125rem);
+  /* Step 1: 18px → 20.25px */
+  --step-1: clamp(1.125rem, 1.0925rem + 0.1442vi, 1.2656rem);
+  /* Step 2: 20.25px → 22.7813px */
+  --step-2: clamp(1.2656rem, 1.2291rem + 0.1623vi, 1.4238rem);
+  /* Step 3: 22.7813px → 25.6289px */
+  --step-3: clamp(1.4238rem, 1.3828rem + 0.1825vi, 1.6018rem);
+  /* Step 4: 25.6289px → 28.8325px */
+  --step-4: clamp(1.6018rem, 1.5556rem + 0.2054vi, 1.802rem);
+  /* Step 5: 28.8325px → 32.4366px */
+  --step-5: clamp(1.802rem, 1.7501rem + 0.231vi, 2.0273rem);
+  /* Step 6: 32.4366px → 36.4912px */
+  --step-6: clamp(2.0273rem, 1.9688rem + 0.2599vi, 2.2807rem);
 }
 
 body {
-  margin: 0;
+  font: 400 var(--step-0) / 1.5 "Merriweather", serif;
 }
 
-img {
-  max-width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
-.informal {
-  /* @see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html */
-  list-style-type: none;
-  /*list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");*/
-  margin: 0;
-  padding: 0;
-
-  & li::before {
-    content: "\200B"; /* add zero-width space */
-    position: absolute;
-  }
+h1 {
+  font-size: var(--step-6);
 }
 
-.hide-element {
-  position: absolute !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  width: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  border: 0 !important;
+h2 {
+  font-size: var(--step-5);
+}
+
+h3 {
+  font-size: var(--step-4);
+}
+
+h4 {
+  font-size: var(--step-3);
+}
+
+h5 {
+  font-size: var(--step-2);
+}
+
+h6 {
+  font-size: var(--step-1);
+}
+
+small {
+  font-size: var(--step--1);
 }

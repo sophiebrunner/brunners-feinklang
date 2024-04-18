@@ -1,8 +1,8 @@
-const menuButton = document.getElementById("menu-button");
+const navigationButton = document.getElementById("navigation-button");
 
 function toggleExpansion() {
-  const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!isExpanded));
+  const isExpanded = navigationButton.getAttribute("aria-expanded") === "true";
+  navigationButton.setAttribute("aria-expanded", String(!isExpanded));
 }
 
-menuButton.addEventListener("click", toggleExpansion);
+navigationButton.addEventListener("click", toggleExpansion);

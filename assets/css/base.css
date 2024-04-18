@@ -1,31 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --clr-highlight-primary: oklch(74.19% 0.229 142.83);
-  --clr-highlight-secondary: oklch(36.72% 0.197 293.95);
-  --clr-background: oklch(95.51% 0 0);
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 18px;
-}
-
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
 span,
 svg {
-  vertical-align: middle;
-}
-
-.icon {
   vertical-align: middle;
 }
 
