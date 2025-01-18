@@ -1,0 +1,6 @@
+:root {
+  --clr-black: #000000;
+  --clr-highlight--1: oklch(72.91% 0.2042 139.2); /* Green */
+  --clr-highlight--2: oklch(45.88% 0.2071 286.57); /* Purple */
+  --color-white: #ffffff;
+}

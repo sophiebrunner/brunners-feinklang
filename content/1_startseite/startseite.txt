@@ -1,3 +1,5 @@
-Title: Startseite
+Title: Brunner's Feinklang
 ----
-Text: test
+Subtitle: Der gemischte Chor aus Burgthann
+----
+Intro: Herzlich willkommen auf unserer Website. Hier erfahren Sie alles über unseren Chor, können sich über Termin informieren und Kontakt mit uns aufnehmen.

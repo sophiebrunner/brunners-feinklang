@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-jade);
+  border-bottom: 4px solid var(--color-licorice);
+}
+
+.logo,
+.logo svg {
+  width: var(--space-xl);
+}
+
+.logo {
+  display: flex;
+}
+
+/* Navigation stylings */
+.navigation {
+  position: relative;
+  background-color: var(--clr-highlight-primary);
+}
+
+.navigation__link {
+  color: #000;
+}
+
+.navigation__button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2668xs);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.navigation__button--text {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: var(--step-6);
+  font-weight: 400;
+}
+
+.icon.icon--open,
+.icon.icon--close {
+  width: 1.5rem;
+  height: auto;
+}
+
+.navigation__list {
+  position: absolute;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: 0;
+
+  background-color: var(--clr-highlight-primary);
+}
+
+.navigation__item + .navigation__item {
+  margin-top: 0.5rem;
+}
+
+/* Toggle states */
+
+.navigation__button[aria-expanded="false"] .icon.icon--close {
+  display: none;
+}
+
+.navigation__button[aria-expanded="true"] .icon.icon--close {
+  display: inline-block;
+}
+
+.navigation__button[aria-expanded="true"] .icon.icon--open {
+  display: none;
+}
+
+.navigation__button[aria-expanded="false"] ~ .navigation__list {
+  display: none;
+}
