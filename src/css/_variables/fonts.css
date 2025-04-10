@@ -1,0 +1,11 @@
+/* @link https://utopia.fyi/type/calculator?c=360,18,1.25,1240,20,1.25,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--1: clamp(0.9rem, 0.8591rem + 0.1818vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.4063rem, 1.3423rem + 0.2841vw, 1.5625rem);
+  --step-2: clamp(1.7578rem, 1.6779rem + 0.3551vw, 1.9531rem);
+  --step-3: clamp(2.1973rem, 2.0974rem + 0.4439vw, 2.4414rem);
+  --step-4: clamp(2.7466rem, 2.6217rem + 0.5549vw, 3.0518rem);
+  --step-5: clamp(3.4332rem, 3.2772rem + 0.6936vw, 3.8147rem);
+}

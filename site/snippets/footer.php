@@ -9,7 +9,7 @@
 </footer>
 
 <?= js([
-    'assets/js/index.js',
+    '/js/app.min.js',
     '@auto'
 ]) ?>
 

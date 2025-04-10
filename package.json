@@ -1,0 +1,31 @@
+{
+  "name": "brunners-feinklang",
+  "version": "1.0.0",
+  "description": "Website for a choir with gulp configuration",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-svgmin": "^4.0.1",
+    "gulp-terser": "^2.1.0",
+    "postcss-import": "^15.1.0"
+  },
+  "keywords": [
+    "gulp",
+    "kirby",
+    "assets",
+    "css",
+    "js",
+    "svg",
+    "accessibility"
+  ],
+  "author": "Dein Name",
+  "license": "MIT"
+}

@@ -4,11 +4,29 @@
 Icon
 .DS_Store
 
+# Node modules
+# ------------
+/node_modules
+
+# vendor
+/vendor
+
+
 # Temporary files
 # ---------------
 
-/media/*
-!/media/index.html
+/public/media/*
+!/public/media/index.html
+/public/assets/*
+!/public/assets/svg/
+/public/assets/svg/*
+# Fonts should not be ignored
+!/public/assets/fonts
+# Images should not be ignored
+!/public/assets/img
+# Site-specific media files should not be ignored
+!/public/assets/site
+
 
 # Lock files
 # ---------------
