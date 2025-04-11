@@ -1,5 +1,21 @@
 Title: Startseite
+
 ----
-Subtitle: Der gemischte Chor aus Burgthann
+
+Ch-title: Brunner's Feinklang
+
 ----
-Intro: Herzlich willkommen auf unserer Website. Hier erfahren Sie alles über unseren Chor, können sich über Termin informieren und Kontakt mit uns aufnehmen.
+
+Ch-intro: <p>Der gemischte Chor aus Burgthann.</p>
+
+----
+
+Ch-image: - file://IQtqtLlm8eIFJWFt
+
+----
+
+Ch-content: <p>Herzlich willkommen auf unserer Website. Hier erfahren Sie alles über unseren Chor, können sich über Termin informieren und Kontakt mit uns aufnehmen.</p>
+
+----
+
+Uuid: nGErcMNTQO4a9XHT

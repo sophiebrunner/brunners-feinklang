@@ -21,3 +21,7 @@
   --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
   --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
 }
+
+:root {
+  --border-radius: 10px;
+}

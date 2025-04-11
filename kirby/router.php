@@ -10,6 +10,6 @@ if ($uri !== '/' && file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . ltrim($uri, '/
 	return false;
 }
 
-$_SERVER['SCRIPT_NAME'] = '/public/index.php';
+$_SERVER['SCRIPT_NAME'] = '/index.php';
 
 require $_SERVER['DOCUMENT_ROOT'] . '/' . $_SERVER['SCRIPT_NAME'];

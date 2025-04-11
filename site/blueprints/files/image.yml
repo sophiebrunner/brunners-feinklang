@@ -1,0 +1,20 @@
+title: Image
+
+accept:
+  extension: jpg, jpeg, png, webp, avif
+maxsize: 2097152 # 2MB in Bytes (2 * 1024 * 1024)
+
+fields:
+  alt:
+    label: "Alternativtext"
+    type: text
+    required: true
+    help: "Ein guter Alternativtext beschreibt prägnant den Inhalt und die Funktion des Bildes. Er sollte relevant für den Kontext sein, das Bild ausreichend beschreiben, aber nicht zu lang werden – das Notwendige, aber nichts Überflüssiges. Begriffe wie „Bild von“ oder „Foto von“ sind überflüssig und sollten vermieden werden."
+  photographer:
+    label: "Fotograf*in"
+    type: text
+    width: 1/2
+  copyright:
+    label: "Copyright"
+    type: text
+    width: 1/2

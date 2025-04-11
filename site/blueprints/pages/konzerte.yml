@@ -1,0 +1,34 @@
+title: Veranstaltungen
+icon: calendar
+
+tabs:
+  content:
+    label: "Seiteninhalt"
+    icon: dashboard
+    sections:
+      intro:
+        type: fields
+        fields:
+          tw_heroImg:
+            label: "Hero Bild"
+            type: files
+            help: Dieses Bild wird im lila Hero-Bereich angezeigt.
+          tw_intro:
+            label: "Einleitungstext"
+            extends: fields/writer
+      drafts:
+        label: "Entwürfe"
+        extends: sections/veranstaltungen
+        status: draft
+      listed:
+        label: "Veröffentlicht"
+        extends: sections/veranstaltungen
+        status: listed
+      unlisted:
+        label: "Nicht veröffentlichte"
+        extends: sections/veranstaltungen
+        status: unlisted
+  contact:
+    extends: sections/kontakt
+  download:
+    extends: sections/download

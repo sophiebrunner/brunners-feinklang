@@ -1,0 +1,97 @@
+title: Article
+num: '{{ page.date.toDate("Ymd") }}'
+icon: bell
+image:
+  back: black
+
+status:
+  draft:
+    label: Als Entwurf speichern
+    text: Der Artikel befindet sich noch im Entwurfsmodus.
+  unlisted:
+    label: Nicht veröffentlichen
+    text: Der Eintrag ist online und kann mit der direkten URL besucht werden, wird aber nicht in der Übersicht aufgeführt.
+  listed:
+    label: Veröffentlichen
+    text: Die Eintrag ist online und in der Übersicht aufgeführt.
+
+tabs:
+  content:
+    label: "Seiteninhalt"
+    icon: dashboard
+    columns:
+      main:
+        width: 2/3
+        fields:
+          tw_intro:
+            label: "Einleitungstext"
+            extends: fields/writer
+          tw_event_signIn:
+            width: 1/2
+            label: "Link zur Anmeldung"
+            type: link
+          tw_event_redirect:
+            width: 1/2
+            label: "Verlinkung zur Veranstaltungsreihe"
+            type: pages
+          tw_baukasten:
+            extends: sections/baukasten
+      sidebar:
+        width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              tw_event_image:
+                label: "Beitragsbild"
+                type: files
+                uploads: image
+                max: 1
+                required: true
+                help: Dieses Bild wird nur in der Veranstaltungsübersicht dargestellt
+              tw_event_date:
+                label: "Datum der Veranstaltung"
+                type: date
+                time: true
+                required: true
+              tw_event_noDate:
+                label: "Falls es noch keinen Termin gibt"
+                type: text
+              tw_event_teaser:
+                label: "Teaser des Artikels für die Übersicht"
+                type: textarea
+                required: true
+                maxlength: 200
+                help: Dieser Text wird nur in der Blog Übersicht dargestellt
+              tw_speaker:
+                label: "Sprecher*innen-Informationen"
+                type: object
+                fields:
+                  tw_speaker_name:
+                    label: "Sprecher*in Name"
+                    type: text
+                  tw_speaker_image:
+                    label: "Sprecher*in Bild"
+                    type: files
+                    uploads: portrait
+                    help: |
+                      Maximal erlaubte Dateigröße: 2MB.
+                      Falls der Upload fehlschlägt, ist die Datei zu groß.
+                      Erforderliches Bildformat: 1:1 (quadratisch).
+                      Falls kein quadratisches Bild hochgeladen wurde, muss ein Fokuspunkt gesetzt werden, damit der gewünschte Bildausschnitt gerendert wird.
+                    query: page.files.filterBy("type", "image")
+                    ratio: 1/2
+                    cover: true
+                  tw_speaker_info:
+                    label: "Beschreibung"
+                    extends: fields/writer
+                  tw_speaker_mail:
+                    label: "E-Mail"
+                    type: email
+                  tw_speaker_social:
+                    label: "Social-Media"
+                    type: url
+  contact:
+    extends: sections/kontakt
+  download:
+    extends: sections/download

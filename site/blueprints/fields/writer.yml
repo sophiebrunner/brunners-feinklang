@@ -1,0 +1,30 @@
+type: writer
+
+headings:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+
+nodes:
+  - paragraph
+  - heading
+  - bulletList
+  - orderedList
+  - quote
+
+marks:
+  - bold
+  - italic
+  - underline
+  - strike
+  - "|"
+  - link
+  - email
+
+toolbar:
+  inline: false
+
+placeholder: Inhalt hier eingeben …
+help: Bitte strukturiere den Inhalt sinnvoll mit Zwischenüberschriften (ab H2).

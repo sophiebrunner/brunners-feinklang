@@ -1,0 +1,30 @@
+title: Startseite
+icon: home
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      intro:
+        type: fields
+        fields:
+          ch_title:
+            label: "Alternativer Seitentitel"
+            type: text
+          ch_intro:
+            label: "Einleitung der Seite"
+            extends: fields/writer
+          ch_content:
+            label: "Seiteninhalt"
+            extends: fields/writer
+
+  sidebar:
+    width: 1/3
+    sections:
+      image:
+        type: fields
+        fields:
+          ch_image:
+            label: "Chorbild"
+            type: files
+            uploads: image

@@ -1,7 +1,56 @@
 Title: Brunner's Feinklang
+
 ----
+
+Tw-footer-nav:
+
+- page://7iDZHS76kTh2YsYy
+- page://zJlRvlSWnAMJ0pt3
+
+----
+
+Ch-meta-title: 
+
+----
+
+Ch-meta-url: 
+
+----
+
+Ch-meta-description: 
+
+----
+
+Ch-og-type: 
+
+----
+
+Ch-twitter-card: 
+
+----
+
+Ch-twitter-site: 
+
+----
+
+Ch-twitter-creator: 
+
+----
+
+Ch-og-image: 
+
+----
+
+Ch-twitter-image: 
+
+----
+
 Author: Sophie Brunner
+
 ----
+
 Description: Website des gemischten Chores Brunner's Feinklang aus Burgthann
+
 ----
+
 Copyright: Made with &hearts; by <a href="https://sophiebrunner.com">Sophie Brunner</a>

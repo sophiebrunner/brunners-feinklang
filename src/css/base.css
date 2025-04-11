@@ -2,3 +2,12 @@ body {
   background-color: #ffffff;
   color: #212121;
 }
+
+main {
+  background-color: var(--color-ivory);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
